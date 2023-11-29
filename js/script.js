@@ -32,4 +32,13 @@ function newItem () {
     //li.appendChild(crossOutButton);
     li.append(crossOutButton);
 
+    //crossOutButton.addEventListener('click', deleteListItem);
+    crossOutButton.on('click', deleteListItem);
+
+    function deleteListItem() {
+        //li.classList.add('delete')
+        li.addClass('delete');
+    }
+
+    
 }
