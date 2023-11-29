@@ -16,4 +16,12 @@ function newItem () {
         //list.appendChild(li);
         $('#list').append(li);
     }
+
+    function crossOut() {
+        //li.classList.toggle("strike");
+        li.toggleClass('strike');
+    }
+
+    //li.addEventListener('dblclick',crossOut);
+    li.on('dblclick', crossOut);
 }
