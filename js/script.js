@@ -24,4 +24,12 @@ function newItem () {
 
     //li.addEventListener('dblclick',crossOut);
     li.on('dblclick', crossOut);
+
+    //let crossOutButton = document.createElement('crossOutButton');
+    let crossOutButton = $('<crossOutButton></crossOutButton>');
+    //crossOutButton.appendChild(document.createTextNode('X'));
+    crossOutButton.append(document.createTextNode('X'));
+    //li.appendChild(crossOutButton);
+    li.append(crossOutButton);
+
 }
