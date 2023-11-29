@@ -40,5 +40,5 @@ function newItem () {
         li.addClass('delete');
     }
 
-    
+   $('#list').sortable();   
 }
