@@ -42,3 +42,11 @@ function newItem () {
 
    $('#list').sortable();   
 }
+
+//add new item upon pressing Enter
+$('#input').on('keydown', function (event) {
+    if (event.which == 13) {
+        event.preventDefault();
+        newItem();
+    }
+});
